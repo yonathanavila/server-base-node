@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "d18f2076-c2f7-45d1-bddf-96bce87d2ca1",
+		"name": "Mapbox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consultar info ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mapbox.com/geocoding/v5/mapbox.places/tegucigalpa.json?access_token=pk.eyJ1IjoieWNydXo5OCIsImEiOiJja3VoNW5wOHkyYW9sMnpvMTRpMXRxOHRnIn0.0VaxjNXM06oqkfhrbwH5eg&limit=5&lenguage=es",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mapbox",
+						"com"
+					],
+					"path": [
+						"geocoding",
+						"v5",
+						"mapbox.places",
+						"tegucigalpa.json"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "pk.eyJ1IjoieWNydXo5OCIsImEiOiJja3VoNW5wOHkyYW9sMnpvMTRpMXRxOHRnIn0.0VaxjNXM06oqkfhrbwH5eg"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "lenguage",
+							"value": "es"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://reqres.in/api/users?page=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clima",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=14.09417&lon=-87.20667&appid=b154e9df4136afbfda96b0506c19f4bc&units=metric&lang=es",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "14.09417"
+						},
+						{
+							"key": "lon",
+							"value": "-87.20667"
+						},
+						{
+							"key": "appid",
+							"value": "b154e9df4136afbfda96b0506c19f4bc"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "es"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
